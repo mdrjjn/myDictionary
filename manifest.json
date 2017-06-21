@@ -1,0 +1,16 @@
+//https://developer.chrome.com/extensions/getstarted
+{
+  "name":"",
+  "version":"",
+  "manifest_version":"",
+  "description":"",
+  "app":{
+    "urls":["website url"],
+    "launch":{
+      "web_url":""
+    }
+  },
+  "icons":{
+
+  }
+}
