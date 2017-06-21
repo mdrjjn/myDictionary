@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+    <div class="mainArea">
+      <label for="">
+        <input id="english" type="text" name="" value="" placeholder="English">
+      </label>
+
+      <label for="">
+        <input id="russian" type="text" name="" value="" placeholder="Russian">
+      </label>
+      <label for="">
+        <button type="button" name="submitButton" id="updateButton"> Submit</button>
+      </label>
+    </div>
+    <!-- ADDING FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script>
+
+    </script>
+    <script src="popup.js"></script>
+
+  </head>
+  <body>
+    <div id="status"></div>
+    <img id="image-result" hidden>
+  </body>
+</html>
